@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
-    <entity name="MedicationSchedule" representedClassName="MedicationSchedule" syncable="YES">
+    <entity name="MedicationSchedule" representedClassName="PillTime.MedicationSchedule" syncable="YES">
         <attribute name="dose" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="scheduleTime" optional="YES" attributeType="Date" minDateTimeInterval="487271520" syncable="YES"/>
@@ -8,7 +8,7 @@
         <relationship name="nurse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Nurse" inverseName="medicationSchedule" inverseEntity="Nurse" syncable="YES"/>
         <relationship name="patient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="medicationSchedules" inverseEntity="Patient" syncable="YES"/>
     </entity>
-    <entity name="Medicine" representedClassName="Medicine" syncable="YES">
+    <entity name="Medicine" representedClassName="PillTime.Medicine" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="medicationSchedule" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MedicationSchedule" inverseName="medicine" inverseEntity="MedicationSchedule" syncable="YES"/>
         <compoundIndexes>
@@ -17,7 +17,7 @@
             </compoundIndex>
         </compoundIndexes>
     </entity>
-    <entity name="Nurse" representedClassName="Nurse" syncable="YES">
+    <entity name="Nurse" representedClassName="PillTime.Nurse" syncable="YES">
         <attribute name="email" attributeType="String" maxValueString="254" indexed="YES" syncable="YES"/>
         <attribute name="password" attributeType="String" maxValueString="32" syncable="YES"/>
         <relationship name="medicationSchedule" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MedicationSchedule" inverseName="nurse" inverseEntity="MedicationSchedule" syncable="YES"/>
@@ -28,7 +28,7 @@
             </compoundIndex>
         </compoundIndexes>
     </entity>
-    <entity name="Patient" representedClassName="Patient" syncable="YES">
+    <entity name="Patient" representedClassName="PillTime.Patient" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" maxValueString="254" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" maxValueString="128" syncable="YES"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String" maxValueString="32" syncable="YES"/>
@@ -41,9 +41,9 @@
         </compoundIndexes>
     </entity>
     <elements>
-        <element name="MedicationSchedule" positionX="25" positionY="12" width="128" height="28"/>
-        <element name="Medicine" positionX="9" positionY="-144" width="128" height="73"/>
-        <element name="Nurse" positionX="-225" positionY="-144" width="128" height="28"/>
-        <element name="Patient" positionX="-225" positionY="18" width="128" height="118"/>
+        <element name="MedicationSchedule" positionX="25" positionY="12" width="128" height="135"/>
+        <element name="Medicine" positionX="9" positionY="-144" width="128" height="75"/>
+        <element name="Nurse" positionX="-225" positionY="-144" width="128" height="105"/>
+        <element name="Patient" positionX="-225" positionY="18" width="128" height="120"/>
     </elements>
 </model>

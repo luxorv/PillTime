@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WJW-PQ-I2s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Soe-hi-EO6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -52,40 +53,68 @@
         <!--PillTime-->
         <scene sceneID="bAZ-Hl-Itv">
             <objects>
-                <viewController storyboardIdentifier="main" modalTransitionStyle="flipHorizontal" id="aDe-r5-txa" customClass="SlideViewController" customModule="PillTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" modalTransitionStyle="flipHorizontal" id="aDe-r5-txa" customClass="NurseViewController" customModule="PillTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LZR-Py-TNz"/>
                         <viewControllerLayoutGuide type="bottom" id="40r-vE-0cE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PK4-4l-Ah9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You are currently signed in as fulanode@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckd-JD-Gg6">
+                                <rect key="frame" x="20" y="186" width="335" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="Lvq-iy-DVD"/>
+                                    <constraint firstAttribute="height" constant="21" id="eQh-VQ-UNc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ja-3g-7dd">
+                                <rect key="frame" x="48" y="215" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FhN-lX-Zbg"/>
+                                    <constraint firstAttribute="width" constant="60" id="Qei-1r-bhW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Sign Out"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Ja-3g-7dd" firstAttribute="top" secondItem="Ckd-JD-Gg6" secondAttribute="bottom" constant="9" id="2fn-KU-l8X"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ckd-JD-Gg6" secondAttribute="leading" id="9BB-Wc-6rL"/>
+                            <constraint firstItem="2Ja-3g-7dd" firstAttribute="leading" secondItem="PK4-4l-Ah9" secondAttribute="leadingMargin" constant="28" id="IGH-rm-5CC"/>
+                            <constraint firstItem="Ckd-JD-Gg6" firstAttribute="top" secondItem="LZR-Py-TNz" secondAttribute="bottom" constant="122" id="Jbj-4Y-9Qw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PillTime" id="mJi-MN-2yM"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f11-9B-F3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2072" y="49"/>
+            <point key="canvasLocation" x="2071.5" y="48.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Nurse View Controller-->
         <scene sceneID="vLy-7Y-smS">
             <objects>
-                <viewController storyboardIdentifier="page2" id="WJW-PQ-I2s" customClass="ViewController" customModule="PillTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page2" id="WJW-PQ-I2s" customClass="NurseViewController" customModule="PillTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LaU-rZ-RUZ"/>
                         <viewControllerLayoutGuide type="bottom" id="ihF-MS-dEk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nB8-FF-0no">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.10228759915436647" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fGl-U2-Syj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="789"/>
+            <point key="canvasLocation" x="2093.5" y="764.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wRG-tt-hjz">

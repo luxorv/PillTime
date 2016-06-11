@@ -21,24 +21,28 @@ class NurseManager: NSObject {
     
     override init() {
         super.init()
-        
     }
     
     // MARK: Class Function
     
     // Create a new Nurse.
     
-    func createNurse(newNurse: Nurse) -> Bool {
+    func createNurse(email: String, password: String) -> Bool {
         
         var saved = true
         
-        let nurse = DatabaseManager.sharedDatabaseManager.nurses.createEntity()
+        if isNurseRegistered(email) {
+            return false
+        }
         
-        nurse.email = newNurse.email
-        nurse.password = newNurse.password
+        let nurseDescription = NSEntityDescription.entityForName("Nurse", inManagedObjectContext: DatabaseManager.sharedDatabaseManager())
+        let nurse = Nurse(entity: nurseDescription!, insertIntoManagedObjectContext: DatabaseManager.sharedDatabaseManager())
+        
+        nurse.email = email
+        nurse.password = password
         
         do {
-            try DatabaseManager.sharedDatabaseManager.save()
+            try nurse.managedObjectContext?.save()
             self.currentNurse = nurse
         } catch let error {
             print(error)
@@ -52,18 +56,21 @@ class NurseManager: NSObject {
     
     func isNurseRegistered(email: String, patientCreation: Bool = false) -> Bool {
         
-        let nurses = DatabaseManager.sharedDatabaseManager.nurses.filter {$0.email == email}
+        let nurseFetch = NSFetchRequest(entityName: "Nurse")
+        var nurses = []
         
-        if  nurses.count > 0 {
-            return true
+        do {
+            nurses = try DatabaseManager.sharedDatabaseManager().executeFetchRequest(nurseFetch) as! [Nurse]
+        } catch {
+            print("Failed to fetch Nurses")
         }
         
-        if !patientCreation {
-            self.currentNurse = nurses.first
-        }
-        
-        for nurse in DatabaseManager.sharedDatabaseManager.nurses {
-            print("EMAIL: \(nurse.email!)")
+        for nurse in nurses {
+            print("EMAIL: \(nurse.email)")
+            
+            if nurse.email == email {
+                return true
+            }
         }
         
         return false

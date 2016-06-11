@@ -6,18 +6,23 @@
 //  Copyright © 2016 Victor Manuel Polanco. All rights reserved.
 //
 
-import Foundation
-import AlecrimCoreData
+import UIKit
+import CoreData
 
-extension DataContext {
-    var nurses:      Table<Nurse>     { return Table<Nurse>(dataContext: self) }
-    var medicines: Table<Medicine> { return Table<Medicine>(dataContext: self) }
-    var schedules: Table<MedicationSchedule> { return Table<MedicationSchedule>(dataContext: self) }
-    var patients: Table<Patient> { return Table<Patient>(dataContext: self) }
-}
+class DatabaseManager: NSObject {
 
-class DatabaseManager: DataContext {
+    static var managedObject: NSManagedObjectContext!
     
-    static let sharedDatabaseManager = DatabaseManager()
+    static func setManagedObjectContext(managedContext: NSManagedObjectContext) {
+        DatabaseManager.managedObject = managedContext
+    }
     
+    static func initWithApplicationManagedObject() {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        managedObject = appDelegate.managedObjectContext
+    }
+    
+    static func sharedDatabaseManager() -> NSManagedObjectContext {
+        return managedObject
+    }
 }

@@ -9,3 +9,8 @@
 import Foundation
 
 // this class will present and update the nurse data in a view and will change the state of the nurse model.
+
+class NursePresenter: NSObject {
+    
+    
+}

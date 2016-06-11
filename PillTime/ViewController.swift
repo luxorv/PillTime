@@ -27,15 +27,17 @@ class ViewController:  UINavigationController {
 //            print("Cannot delte")
 //        }
         
+        
+//        let nurseM = NurseManager()
+//        let nurseDescription = NSEntityDescription.entityForName("Nurse", inManagedObjectContext: DatabaseManager.sharedDatabaseManager())
+//        let nurse = Nurse(entity: nurseDescription!, insertIntoManagedObjectContext: DatabaseManager.sharedDatabaseManager())
 //        
-//        var nurseM = NurseManager()
-//        var nurse = DatabaseManager.sharedDatabaseManager.nurses.createEntity()
-//        
-//        nurse.email = "eeee"
+//        nurse.email = "eqe"
 //        nurse.password = "sasa"
 //        
-//        print(nurseM.createNurse(nurse))
-//        print(nurseM.isNurseRegistered("eeee"))
+//        print(nurseM.isNurseRegistered("eqe"))
+//        //print(nurseM.createNurse(nurse))
+        
     }
 
     override func didReceiveMemoryWarning() {
