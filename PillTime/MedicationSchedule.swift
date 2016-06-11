@@ -7,5 +7,11 @@
 //
 
 import Foundation
+import CoreData
 
-// this class will serve as a model for the medication schedule.
+@objc(MedicationSchedule)
+class MedicationSchedule: NSManagedObject {
+
+// Insert code here to add functionality to your managed object subclass
+
+}

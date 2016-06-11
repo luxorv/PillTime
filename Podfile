@@ -9,10 +9,12 @@ target 'PillTime' do
   pod 'CryptoSwift'
   pod 'SwipeViewController'
   pod 'Canvas'
+  pod 'AlecrimCoreData'
 
  target 'PillTimeTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'AlecrimCoreData'
   end
 
   target 'PillTimeUITests' do

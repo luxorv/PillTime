@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WJW-PQ-I2s">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -72,7 +72,7 @@
         <!--View Controller-->
         <scene sceneID="vLy-7Y-smS">
             <objects>
-                <viewController storyboardIdentifier="page2" id="WJW-PQ-I2s" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page2" id="WJW-PQ-I2s" customClass="ViewController" customModule="PillTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LaU-rZ-RUZ"/>
                         <viewControllerLayoutGuide type="bottom" id="ihF-MS-dEk"/>

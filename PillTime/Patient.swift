@@ -1,5 +1,5 @@
 //
-//  Medicine.swift
+//  Patient.swift
 //  PillTime
 //
 //  Created by Victor Manuel Polanco on 6/10/16.
@@ -9,8 +9,8 @@
 import Foundation
 import CoreData
 
-@objc(Medicine)
-class Medicine: NSManagedObject {
+@objc(Patient)
+class Patient: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

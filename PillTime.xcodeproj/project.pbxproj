@@ -22,8 +22,6 @@
 		E902155E1D09BFDE0054ACB2 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902155D1D09BFDE0054ACB2 /* SlideViewController.swift */; };
 		E902155F1D09BFDE0054ACB2 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902155D1D09BFDE0054ACB2 /* SlideViewController.swift */; };
 		E90215601D09BFDE0054ACB2 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902155D1D09BFDE0054ACB2 /* SlideViewController.swift */; };
-		E90215631D09FEA50054ACB2 /* Nurse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215621D09FEA50054ACB2 /* Nurse.swift */; };
-		E90215641D09FEA50054ACB2 /* Nurse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215621D09FEA50054ACB2 /* Nurse.swift */; };
 		E90215661D0A03D80054ACB2 /* EncryptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215651D0A03D80054ACB2 /* EncryptService.swift */; };
 		E90215671D0A03D80054ACB2 /* EncryptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215651D0A03D80054ACB2 /* EncryptService.swift */; };
 		E90215691D0A08010054ACB2 /* NurseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215681D0A08010054ACB2 /* NurseAuthService.swift */; };
@@ -33,20 +31,39 @@
 		E902156E1D0AF8BB0054ACB2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902156B1D0AF8BB0054ACB2 /* MainViewController.swift */; };
 		E90215701D0B01070054ACB2 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902156F1D0B01070054ACB2 /* Scheduler.swift */; };
 		E90215711D0B01070054ACB2 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902156F1D0B01070054ACB2 /* Scheduler.swift */; };
-		E90215731D0B01110054ACB2 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215721D0B01110054ACB2 /* Medicine.swift */; };
-		E90215741D0B01110054ACB2 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215721D0B01110054ACB2 /* Medicine.swift */; };
 		E90215761D0B01290054ACB2 /* MedicineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215751D0B01290054ACB2 /* MedicineManager.swift */; };
 		E90215771D0B01290054ACB2 /* MedicineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90215751D0B01290054ACB2 /* MedicineManager.swift */; };
 		E90987084D377F85E16355AA /* Pods_PillTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CBBA8A77BCCBC7752A3033 /* Pods_PillTime.framework */; };
+		E9336B391D0C47C1004004B9 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9336B381D0C47C1004004B9 /* CoreDataHelpers.swift */; };
+		E9B7A7F41D0B638B00805E94 /* Nurse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCA1D0B341F0059D54D /* Nurse.swift */; };
 		E9B8CF9C1D0B1D980059D54D /* NurseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CF9B1D0B1D980059D54D /* NurseManager.swift */; };
-		E9B8CF9E1D0B1EF50059D54D /* MedicationSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CF9D1D0B1EF50059D54D /* MedicationSchedule.swift */; };
-		E9B8CF9F1D0B1EF50059D54D /* MedicationSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CF9D1D0B1EF50059D54D /* MedicationSchedule.swift */; };
 		E9B8CFA11D0B1FC80059D54D /* MedicinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFA01D0B1FC80059D54D /* MedicinePresenter.swift */; };
 		E9B8CFA21D0B1FC80059D54D /* MedicinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFA01D0B1FC80059D54D /* MedicinePresenter.swift */; };
 		E9B8CFA41D0B1FFE0059D54D /* NursePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFA31D0B1FFE0059D54D /* NursePresenter.swift */; };
 		E9B8CFA51D0B1FFE0059D54D /* NursePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFA31D0B1FFE0059D54D /* NursePresenter.swift */; };
 		E9B8CFA71D0B20440059D54D /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFA61D0B20440059D54D /* SchedulePresenter.swift */; };
 		E9B8CFA81D0B20440059D54D /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFA61D0B20440059D54D /* SchedulePresenter.swift */; };
+		E9B8CFCF1D0B341F0059D54D /* MedicationScheduleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFC71D0B341F0059D54D /* MedicationScheduleInfo.swift */; };
+		E9B8CFD01D0B341F0059D54D /* MedicationScheduleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFC71D0B341F0059D54D /* MedicationScheduleInfo.swift */; };
+		E9B8CFD11D0B341F0059D54D /* MedicationSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFC81D0B341F0059D54D /* MedicationSchedule.swift */; };
+		E9B8CFD21D0B341F0059D54D /* MedicationSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFC81D0B341F0059D54D /* MedicationSchedule.swift */; };
+		E9B8CFD31D0B341F0059D54D /* NurseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFC91D0B341F0059D54D /* NurseInfo.swift */; };
+		E9B8CFD41D0B341F0059D54D /* NurseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFC91D0B341F0059D54D /* NurseInfo.swift */; };
+		E9B8CFD51D0B341F0059D54D /* Nurse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCA1D0B341F0059D54D /* Nurse.swift */; };
+		E9B8CFD71D0B341F0059D54D /* PatientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCB1D0B341F0059D54D /* PatientInfo.swift */; };
+		E9B8CFD81D0B341F0059D54D /* PatientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCB1D0B341F0059D54D /* PatientInfo.swift */; };
+		E9B8CFD91D0B341F0059D54D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCC1D0B341F0059D54D /* Patient.swift */; };
+		E9B8CFDA1D0B341F0059D54D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCC1D0B341F0059D54D /* Patient.swift */; };
+		E9B8CFDB1D0B341F0059D54D /* MedicineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCD1D0B341F0059D54D /* MedicineInfo.swift */; };
+		E9B8CFDC1D0B341F0059D54D /* MedicineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCD1D0B341F0059D54D /* MedicineInfo.swift */; };
+		E9B8CFDD1D0B341F0059D54D /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCE1D0B341F0059D54D /* Medicine.swift */; };
+		E9B8CFDE1D0B341F0059D54D /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFCE1D0B341F0059D54D /* Medicine.swift */; };
+		E9B8CFE01D0B38190059D54D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFDF1D0B38190059D54D /* DatabaseManager.swift */; };
+		E9B8CFE11D0B38190059D54D /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFDF1D0B38190059D54D /* DatabaseManager.swift */; };
+		E9B8CFE31D0B458C0059D54D /* NurseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CFE21D0B458C0059D54D /* NurseManagerTests.swift */; };
+		E9B8CFE41D0B46AE0059D54D /* NurseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8CF9B1D0B1D980059D54D /* NurseManager.swift */; };
+		E9F754C11D0B27FA0033F9B1 /* PillTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9F754BF1D0B27FA0033F9B1 /* PillTime.xcdatamodeld */; };
+		E9F754C21D0B27FA0033F9B1 /* PillTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9F754BF1D0B27FA0033F9B1 /* PillTime.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,18 +107,27 @@
 		E90215481D09AD830054ACB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90215591D09BE230054ACB2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		E902155D1D09BFDE0054ACB2 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
-		E90215621D09FEA50054ACB2 /* Nurse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nurse.swift; sourceTree = "<group>"; };
 		E90215651D0A03D80054ACB2 /* EncryptService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptService.swift; sourceTree = "<group>"; };
 		E90215681D0A08010054ACB2 /* NurseAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NurseAuthService.swift; sourceTree = "<group>"; };
 		E902156B1D0AF8BB0054ACB2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E902156F1D0B01070054ACB2 /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
-		E90215721D0B01110054ACB2 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		E90215751D0B01290054ACB2 /* MedicineManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineManager.swift; sourceTree = "<group>"; };
+		E9336B381D0C47C1004004B9 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 		E9B8CF9B1D0B1D980059D54D /* NurseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NurseManager.swift; sourceTree = "<group>"; };
-		E9B8CF9D1D0B1EF50059D54D /* MedicationSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationSchedule.swift; sourceTree = "<group>"; };
 		E9B8CFA01D0B1FC80059D54D /* MedicinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinePresenter.swift; sourceTree = "<group>"; };
 		E9B8CFA31D0B1FFE0059D54D /* NursePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NursePresenter.swift; sourceTree = "<group>"; };
 		E9B8CFA61D0B20440059D54D /* SchedulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
+		E9B8CFC71D0B341F0059D54D /* MedicationScheduleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationScheduleInfo.swift; sourceTree = "<group>"; };
+		E9B8CFC81D0B341F0059D54D /* MedicationSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationSchedule.swift; sourceTree = "<group>"; };
+		E9B8CFC91D0B341F0059D54D /* NurseInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NurseInfo.swift; sourceTree = "<group>"; };
+		E9B8CFCA1D0B341F0059D54D /* Nurse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nurse.swift; sourceTree = "<group>"; };
+		E9B8CFCB1D0B341F0059D54D /* PatientInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientInfo.swift; sourceTree = "<group>"; };
+		E9B8CFCC1D0B341F0059D54D /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		E9B8CFCD1D0B341F0059D54D /* MedicineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineInfo.swift; sourceTree = "<group>"; };
+		E9B8CFCE1D0B341F0059D54D /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		E9B8CFDF1D0B38190059D54D /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		E9B8CFE21D0B458C0059D54D /* NurseManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NurseManagerTests.swift; sourceTree = "<group>"; };
+		E9F754C01D0B27FA0033F9B1 /* PillTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PillTime.xcdatamodel; sourceTree = "<group>"; };
 		ECF178AC705234108205C1AD /* Pods-PillTimeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillTimeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PillTimeUITests/Pods-PillTimeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,16 +217,23 @@
 				E902152D1D09AD830054ACB2 /* Assets.xcassets */,
 				E902152F1D09AD830054ACB2 /* LaunchScreen.storyboard */,
 				E90215321D09AD830054ACB2 /* Info.plist */,
+				E9B8CFDF1D0B38190059D54D /* DatabaseManager.swift */,
 				E90215681D0A08010054ACB2 /* NurseAuthService.swift */,
 				E9B8CF9B1D0B1D980059D54D /* NurseManager.swift */,
-				E90215621D09FEA50054ACB2 /* Nurse.swift */,
+				E9B8CFC91D0B341F0059D54D /* NurseInfo.swift */,
+				E9B8CFCA1D0B341F0059D54D /* Nurse.swift */,
 				E9B8CFA31D0B1FFE0059D54D /* NursePresenter.swift */,
-				E90215721D0B01110054ACB2 /* Medicine.swift */,
+				E9B8CFCD1D0B341F0059D54D /* MedicineInfo.swift */,
+				E9B8CFCE1D0B341F0059D54D /* Medicine.swift */,
 				E9B8CFA01D0B1FC80059D54D /* MedicinePresenter.swift */,
 				E90215751D0B01290054ACB2 /* MedicineManager.swift */,
+				E9B8CFC71D0B341F0059D54D /* MedicationScheduleInfo.swift */,
+				E9B8CFC81D0B341F0059D54D /* MedicationSchedule.swift */,
+				E9B8CFCB1D0B341F0059D54D /* PatientInfo.swift */,
+				E9B8CFCC1D0B341F0059D54D /* Patient.swift */,
 				E9B8CFA61D0B20440059D54D /* SchedulePresenter.swift */,
 				E902156F1D0B01070054ACB2 /* Scheduler.swift */,
-				E9B8CF9D1D0B1EF50059D54D /* MedicationSchedule.swift */,
+				E9F754BF1D0B27FA0033F9B1 /* PillTime.xcdatamodeld */,
 			);
 			path = PillTime;
 			sourceTree = "<group>";
@@ -210,6 +243,8 @@
 			children = (
 				E902153B1D09AD830054ACB2 /* PillTimeTests.swift */,
 				E902153D1D09AD830054ACB2 /* Info.plist */,
+				E9B8CFE21D0B458C0059D54D /* NurseManagerTests.swift */,
+				E9336B381D0C47C1004004B9 /* CoreDataHelpers.swift */,
 			);
 			path = PillTimeTests;
 			sourceTree = "<group>";
@@ -486,7 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9B8CF9E1D0B1EF50059D54D /* MedicationSchedule.swift in Sources */,
+				E9F754C11D0B27FA0033F9B1 /* PillTime.xcdatamodeld in Sources */,
 				E90215701D0B01070054ACB2 /* Scheduler.swift in Sources */,
 				E90215291D09AD830054ACB2 /* ViewController.swift in Sources */,
 				E90215271D09AD830054ACB2 /* AppDelegate.swift in Sources */,
@@ -494,12 +529,19 @@
 				E90215661D0A03D80054ACB2 /* EncryptService.swift in Sources */,
 				E902155A1D09BE230054ACB2 /* MenuTableViewController.swift in Sources */,
 				E9B8CFA71D0B20440059D54D /* SchedulePresenter.swift in Sources */,
-				E90215631D09FEA50054ACB2 /* Nurse.swift in Sources */,
+				E9B8CFE01D0B38190059D54D /* DatabaseManager.swift in Sources */,
+				E9B8CFCF1D0B341F0059D54D /* MedicationScheduleInfo.swift in Sources */,
+				E9B8CFD91D0B341F0059D54D /* Patient.swift in Sources */,
 				E902155E1D09BFDE0054ACB2 /* SlideViewController.swift in Sources */,
+				E9B8CFD71D0B341F0059D54D /* PatientInfo.swift in Sources */,
 				E9B8CFA41D0B1FFE0059D54D /* NursePresenter.swift in Sources */,
 				E90215761D0B01290054ACB2 /* MedicineManager.swift in Sources */,
-				E90215731D0B01110054ACB2 /* Medicine.swift in Sources */,
 				E9B8CF9C1D0B1D980059D54D /* NurseManager.swift in Sources */,
+				E9B8CFDD1D0B341F0059D54D /* Medicine.swift in Sources */,
+				E9B8CFDB1D0B341F0059D54D /* MedicineInfo.swift in Sources */,
+				E9B8CFD51D0B341F0059D54D /* Nurse.swift in Sources */,
+				E9B8CFD11D0B341F0059D54D /* MedicationSchedule.swift in Sources */,
+				E9B8CFD31D0B341F0059D54D /* NurseInfo.swift in Sources */,
 				E90215691D0A08010054ACB2 /* NurseAuthService.swift in Sources */,
 				E902156C1D0AF8BB0054ACB2 /* MainViewController.swift in Sources */,
 			);
@@ -509,19 +551,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B8CFD01D0B341F0059D54D /* MedicationScheduleInfo.swift in Sources */,
+				E9B8CFD81D0B341F0059D54D /* PatientInfo.swift in Sources */,
+				E9B8CFDC1D0B341F0059D54D /* MedicineInfo.swift in Sources */,
+				E9F754C21D0B27FA0033F9B1 /* PillTime.xcdatamodeld in Sources */,
 				E902156D1D0AF8BB0054ACB2 /* MainViewController.swift in Sources */,
-				E90215741D0B01110054ACB2 /* Medicine.swift in Sources */,
+				E9B8CFE41D0B46AE0059D54D /* NurseManager.swift in Sources */,
+				E9336B391D0C47C1004004B9 /* CoreDataHelpers.swift in Sources */,
 				E90215711D0B01070054ACB2 /* Scheduler.swift in Sources */,
+				E9B8CFDE1D0B341F0059D54D /* Medicine.swift in Sources */,
 				E9B8CFA81D0B20440059D54D /* SchedulePresenter.swift in Sources */,
+				E9B8CFD41D0B341F0059D54D /* NurseInfo.swift in Sources */,
 				E902155F1D09BFDE0054ACB2 /* SlideViewController.swift in Sources */,
+				E9B7A7F41D0B638B00805E94 /* Nurse.swift in Sources */,
+				E9B8CFE31D0B458C0059D54D /* NurseManagerTests.swift in Sources */,
 				E9B8CFA51D0B1FFE0059D54D /* NursePresenter.swift in Sources */,
+				E9B8CFE11D0B38190059D54D /* DatabaseManager.swift in Sources */,
 				E902155B1D09BE230054ACB2 /* MenuTableViewController.swift in Sources */,
+				E9B8CFDA1D0B341F0059D54D /* Patient.swift in Sources */,
 				E902153C1D09AD830054ACB2 /* PillTimeTests.swift in Sources */,
+				E9B8CFD21D0B341F0059D54D /* MedicationSchedule.swift in Sources */,
 				E902156A1D0A08010054ACB2 /* NurseAuthService.swift in Sources */,
-				E90215641D09FEA50054ACB2 /* Nurse.swift in Sources */,
 				E9B8CFA21D0B1FC80059D54D /* MedicinePresenter.swift in Sources */,
 				E90215771D0B01290054ACB2 /* MedicineManager.swift in Sources */,
-				E9B8CF9F1D0B1EF50059D54D /* MedicationSchedule.swift in Sources */,
 				E90215671D0A03D80054ACB2 /* EncryptService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +714,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = PillTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -678,6 +731,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = PillTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -692,6 +746,7 @@
 			baseConfigurationReference = 8DF4FACAD71D2479F4749A10 /* Pods-PillTimeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = PillTimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VMP.PillTimeTests;
@@ -705,6 +760,7 @@
 			baseConfigurationReference = 4BB89CDFB4D21C7E0D9806A4 /* Pods-PillTimeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = PillTimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VMP.PillTimeTests;
@@ -777,6 +833,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9F754BF1D0B27FA0033F9B1 /* PillTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9F754C01D0B27FA0033F9B1 /* PillTime.xcdatamodel */,
+			);
+			currentVersion = E9F754C01D0B27FA0033F9B1 /* PillTime.xcdatamodel */;
+			path = PillTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E902151B1D09AD830054ACB2 /* Project object */;
 }
